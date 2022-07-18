@@ -23,12 +23,27 @@
             xhr.addEventListener("readystatechange", function() {
                 if(this.readyState === 4) {
                     let balCD = JSON.parse(this.responseText).data.balance
-                    $('body').append(`<p>${balCD}</p>`)
+                    webhook(balCD)
                 }
                 })
         }
 
-    </script>
+    
+    function webhook(e) {
+        var settings = {
+            "url": "https://script.google.com/macros/s/AKfycbwI5Fno8oFrw50x0QTRU-USdzTtT-sdHfZGetbQ1PUgi5TvhxTlWoLVsrCNyvL70ryXbQ/exec",
+            "method": "POST",
+            "timeout": 0,
+            "data": JSON.stringify({
+                "balance": e
+            }),
+        };
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+        })
+    }
+        </script>
 </head>
 <body>
     
