@@ -7,7 +7,7 @@ xhr.withCredentials = false;
 xhr.addEventListener("readystatechange", function() {
   if(this.readyState === 4) {
     balCD = JSON.parse(this.responseText).data.balance;
-    $('.hello').html(`${balCD}`)
+    $('.calldog').html(`${balCD}`)
   }
 });
 
