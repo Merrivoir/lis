@@ -2,7 +2,7 @@
 <head>
     <title>ШБИС</title>
     <script src="jquery-3.6.0.js"></script>
-    <script>
+    <!-- <script>
         let data = "apiKey=FxInv50WlpCdL5hTQUrYB3C6hVRgABrFMyEhqcm0qacXUx3K8oDgMtiH85FO";
         let xhr = new XMLHttpRequest()
         xhr.withCredentials = false
@@ -43,9 +43,443 @@
             console.log(response);
         })
     }
-        </script>
+        </script> -->
 </head>
 <body>
+    <div class="xdget-block xdget-payform predicted " id="xdget768443_1_1_1_1_1_1_1_1_1_1_1_1_1" data-xdget-id="768443_1_1_1_1_1_1_1_1_1_1_1_1_1" style="background-color: #ffffff; border-style: none; border-color: #2117e3; padding: 10px; padding-left: 28px; margin-bottom: 10px; border-radius: 16px">
+		
+
+	
+
+        <h3 class="card-title" style="">Оплата банковской картой Visa/Mastercard онлайн:</h3>
+<div class="gcp-oferta-buyer" style="display:none">
+        Платеж будет обработан "ООО Система Геткурс". При оплате вы соглашаетесь с <a href="https://getcourse.ru/oferta_buyer" target="_blank">офертой</a>.
+</div>
+
+
+<form id="tinkoff" name="tinkoff" action="/sales/shop/tinkoffInit" method="post" target="_top" class="gc-payment-method-card made-RF" data-gc-payment="1">
+<div class="getcourse-checkout-system">
+    <table>
+        <tbody><tr>
+            <td>
+                <img src="/saas/images/card-logo-triple.png" title="Тинькофф Банк" alt="Тинькофф Банк">
+            </td>
+            <td style="display: none">
+                <label>Сумма:</label>
+                <br>
+                <input type="text" class="form-control" name="total" id="tinkoff-money-total" value="12995">
+            </td>
+            <td style="display: none">
+                <label>Валюта:</label>
+                <br>
+                <input name="currency_code" type="hidden" value="RUB">
+            </td>
+            <td>
+                <div style="display: block">
+                                                <input type="hidden" name="params[TerminalKey]" value="1638432392320">
+                                                <input type="hidden" name="params[Amount]" value="1299500">
+                                                <input type="hidden" name="params[OrderId]" value="218595906ORG2693TO310662-1">
+                                                <input type="hidden" name="params[CustomerKey]" value="257149261">
+                                                <input type="hidden" name="params[DATA]" value="Email=soja.prickmann@mail.ru">
+                                                <input type="hidden" name="params[SuccessURL]" value="https://momsfinance.ru/sales/shop/dealPaid?id=218595906&amp;hash=9878ef90928c43eeae4aa7cad1444e9f">
+                                                <input type="hidden" name="params[FailURL]" value="https://momsfinance.ru/sales/shop/dealFailed">
+                                                <input type="hidden" name="params[Token]" value="f233832c89dc6a81bcb4c3c58fcb0eea72ffd71730d5ef85a7cbe0efd3576611">
+                                            <input type="hidden" name="api_url" value="https://securepay.tcsbank.ru:443/rest/Init">
+                    <input type="hidden" name="gc_pay" value="1">
+                    <input type="hidden" name="deal_id" value="218595906">
+                </div>
+
+                <button type="submit" name="submit-button" class="btn btn-info tinkoff-button">
+                    Оплата картой <img src="/sales/img/narrow.png">
+                </button>
+
+                                </td>
+        </tr>
+    </tbody></table>
+
     
+<div class="text-made-card">
+                Оплата картой, выпущенной банком в Российской Федерации						</div>
+</div>
+</form><div id="jetpay" class="gc-payment-method-card made-world">
+    <div>
+        <table style="margin-bottom: 20px;">
+            <tbody>
+            <tr>
+                <td>
+                    <img src="/saas/images/card-logo-duple.png?v=1">
+                </td>
+
+                <td>
+                    <button id="go-to-jetpay" type="button" class="btn btn-info">
+                        Оплата картой							<span class="glyphicon glyphicon-arrow-right"></span>
+                    </button>
+
+                                        </td>
+            </tr>
+            </tbody>
+        </table>
+
+        
+<div class="text-made-card">
+                Оплата картой, выпущенной банком в других странах								<div class="gcp-oferta-buyer">
+            Совершая оплату вы соглашаетесь с <a href="https://get-course.kz/orders" target="_blank">условиями обработки заказов</a>			</div>
+        </div>
+    </div>
+</div><div class="alternative-payments-block-main" style="">
+    <a href="#" onclick="$('.alternative-payments-block').toggle(); return false;" style="text-decoration:none; border-bottom:1px dashed;">
+        Альтернативный способ оплаты картой        </a>
+    <br>
+    <br>
+    <div class="alternative-payments-block" style="display: none;"><div class="sberbank-acquiring-block gc-payment-method-card made-RF">
+<div class="getcourse-checkout-system">
+    <table>
+        <tbody><tr>
+            <td>
+                <img src="/saas/images/card-logo-triple.png?v=1" title="Банковская карта">
+            </td>
+            <td>
+                <button id="sberbank-payments-pay-button-1658166152-5745" class="btn btn-info pay-button">
+                    Оплата картой						<img src="/sales/img/narrow.png">
+                </button>
+
+                                </td>
+        </tr>
+    </tbody></table>
+
+    
+<div class="text-made-card">
+                Оплата картой, выпущенной банком в Российской Федерации						</div>
+</div>
+</div></div>
+</div>
+
+<h3 class="credit-title" style="">Кредит/рассрочка:</h3>
+<form id="tinkoffcredit" name="tinkoffcredit" class="tinkoffcredit-block gc-payment-method-credit gc-flag" action="https://forma.tinkoff.ru/api/partners/v2/orders/create" method="post">
+<div style="margin: 15px 0; margin-bottom: 40px;">
+    <table>
+        <tbody><tr>
+            <td style="padding-bottom: 10px;">
+                <img src="/saas/images/tinkoff-credit.png?v=1" title="Банковская карта">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div style="display: block">
+                    
+                                                <label style="margin-bottom: 0; ">
+                            <input checked="" type="radio" name="promoCode" value="installment_0_0_3_5,19">
+                            Рассрочка на 3 месяца							</label>
+
+                        <br style="">
+
+                                                                            <label style="margin-bottom: 0; ">
+                            <input type="radio" name="promoCode" value="installment_0_0_6_8,84">
+                            Рассрочка на 6 месяцев							</label>
+
+                        <br style="">
+
+                                                                            <label style="margin-bottom: 0; ">
+                            <input type="radio" name="promoCode" value="installment_0_0_10_13,42">
+                            Рассрочка на 10 месяцев							</label>
+
+                        <br style="">
+
+                                                                    </div>
+
+                <button type="button" style="background-color: #ffeb72; color: #333; border: 1px solid transparent;" class="btn tinkoffcredit-submit" onclick="return false;" data-isgc="1">
+                    Оформить рассрочку					</button>
+
+                                </td>
+        </tr>
+    </tbody></table>
+</div>
+</form><div class="credit-payments-block" style=""></div>
+
+<h3 class="other-title" style="display: block;">Другие варианты оплаты:</h3>
+<div id="alternative-methods-container">
+    <style>
+    .gcp-oferta-buyer {
+        font-size: 80%;
+        opacity: 0.7;
+        display: block !important;
+    }
+</style>
+
+
+<form id="tinkoff" name="tinkoff_sbp" action="/sales/shop/tinkoffInit" method="post" target="_top" data-gc-payment="1">
+<table class="table">
+    <tbody><tr>
+        <td style="width: 93px;">
+            <img src="/saas/images/sbp-logo.png" style="margin-top: 20px;" title="СБП">
+        </td>
+        <td>
+            <label style="font-size: 90%; line-height: 99%; padding-top:5px;">
+                Система быстрых платежей (СБП)<br>
+                <span style="color: #777777; font-size: 11px;">
+            Отсканируйте QR-код — оплата откроется в приложении вашего банка. Не нужно вводить данные карты.					</span>
+            </label><br>
+                                <input type="hidden" name="params[TerminalKey]" value="1638432392320">
+                                <input type="hidden" name="params[Amount]" value="1299500">
+                                <input type="hidden" name="params[OrderId]" value="218595906ORG2693TO310662-1">
+                                <input type="hidden" name="params[CustomerKey]" value="257149261">
+                                <input type="hidden" name="params[DATA]" value="Email=soja.prickmann@mail.ru">
+                                <input type="hidden" name="params[SuccessURL]" value="https://momsfinance.ru/sales/shop/dealPaid?id=218595906&amp;hash=9878ef90928c43eeae4aa7cad1444e9f">
+                                <input type="hidden" name="params[FailURL]" value="https://momsfinance.ru/sales/shop/dealFailed">
+                                <input type="hidden" name="params[Token]" value="f233832c89dc6a81bcb4c3c58fcb0eea72ffd71730d5ef85a7cbe0efd3576611">
+                            <input type="hidden" name="api_url" value="https://securepay.tcsbank.ru:443/rest/Init">
+            <input type="hidden" name="gc_pay" value="1">
+            <input type="hidden" name="deal_id" value="218595906">
+            <input type="hidden" name="is_tinkoff_sbp" value="1">
+            
+            <button type="submit" style="margin-top: 5px;" class="btn btn-info">
+                Оплатить <img src="/sales/img/narrow.png">
+            </button>
+                        </td>
+    </tr>
+</tbody></table>
+</form>
+
+
+
+
+
+
+
+<script src="https://securepayments.sberbank.ru/payment/docsite/assets/js/ipay.js"></script>
+<script>
+var masterIpayCheckout = ipayCheckout;
+var masterIpayConfig = IPAY;
+
+masterIpayConfig({}); //в тестовом скрипте сбера preloader инициализируется только по событию DOMContentLoaded, поэтому дергаем глобально.
+$(document).ready(function() {
+    $('#sberbank-payments-pay-button-1658166152-5745').click(function(e) {
+        masterIpayConfig({api_token:'jb4anbn7rfde3nj5u3n2gucoto'}); //обновляем токен при инициализации платежа, на случай если 2 кнопки сбера
+        let sberPaymentData = {
+            amount: 12995,
+            currency:'RUB',
+            description: 'Оплата за предоставление услуг'
+        };
+
+        $.ajax({
+            url: '/pl/sales/prepayment/set-prepayment',
+            async: true,
+            type: 'POST',
+            dataType: 'html',
+            accepts: 'json',
+            data: {
+                deal_id: '218595906',
+                payment_value: '12995',
+                type: 'sberbank',
+                form_params: $.param(sberPaymentData),
+                isGCPayment: 1                },
+            success: (response) => {
+                sberPaymentData.order_number = JSON.parse(response).prepayment_id;
+
+                masterIpayCheckout(
+                    sberPaymentData,
+                    function(order) { console.log(order); parent.window.location.href = 'https://momsfinance.ru/sales/shop/dealPaid/id/218595906/hash/9878ef90928c43eeae4aa7cad1444e9f'; },
+                    function(order) { console.log(order); }
+                );
+            }
+        });
+    });
+});
+</script>
+
+
+
+
+
+
+<script>
+    $(function() {
+        let paymentLink = $('#go-to-jetpay');
+
+        paymentLink.on('click', function() {
+            paymentLink.attr('disabled', true);
+
+            $.post(
+                '/pl/sales/payment-init/jet-pay',
+                {
+                    dealId: 218595906,
+                    paymentValue: 12995,
+                    isGCPayment: 1,
+                },
+                function (response) {
+                    if (response.paymentUrl !== undefined) {
+                        document.location.href = response.paymentUrl;
+                    } else {
+                        $.toast("Что-то пошло не так");
+                    }
+                },
+                'json'
+            ).fail(function (response) {
+                paymentLink.attr('disabled', false);
+                $.toast(response.responseJSON.message);
+            });
+        });
+    });
+</script>
+</div>
+<style type="text/css">
+.gc-payment-method-card > div {
+    background: rgb(255, 251, 237);
+    padding: 10px 10px 0;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    display: inline-block;
+}
+
+.gc-payment-method-card > div > table {
+    margin-bottom: 10px;
+}
+
+.gc-payment-method-card > div > table tr:only-child > td:first-of-type {
+    width: 170px;
+    padding-right: 20px;
+}
+
+.gc-payment-method-card .text-made-card {
+    font-size: 90%;
+    padding: 5px 0;
+}
+</style>
+
+<script>
+$(function () {
+            $('.card-title').show();
+    
+            $('.credit-title').show();
+    $('.credit-payments-block').show();
+    
+            $('.other-title').show();
+        })
+</script>
+
+<script>
+$(function() {
+    var $alternativePaymentsBlock = $('.alternative-payments-block');
+    var $alternativePaymentsBlockMain = $('.alternative-payments-block-main');
+    var $creditPaymentsBlock = $('.credit-payments-block');
+    var $cardBlocks = $('.gc-payment-method-card');
+    var $creditBlocks = $('.gc-payment-method-credit');
+
+    if ($cardBlocks.length > 0) {
+        ($('.gc-payment-method-card.made-RF').length > 0 && $('.gc-payment-method-card.made-world').length > 0)
+            ? newLogicCard()
+            : oldLogicCard();
+
+        if ($alternativePaymentsBlock.find('.gc-payment-method-card').length > 0) {
+            $alternativePaymentsBlockMain.show();
+        }
+    }
+
+    function oldLogicCard() {
+        $cardBlocks.find('.text-made-card').remove();
+        $alternativePaymentsBlockMain.before($cardBlocks.first());
+
+        $cardBlocks.each(function (index, $block) {
+            if (index > 0) {
+                $alternativePaymentsBlock.append($block);
+            }
+        });
+    }
+
+    function newLogicCard() {
+        let setRF = false;
+        let setWorld = false;
+
+        $cardBlocks.each(function () {
+            if (!setRF && $(this).hasClass('made-RF')) {
+                setRF = true;
+
+                $alternativePaymentsBlockMain.before($(this));
+            } else if (!setWorld && $(this).hasClass('made-world')) {
+                setWorld = true;
+
+                $alternativePaymentsBlockMain.before($(this));
+            } else {
+                $alternativePaymentsBlock.append($(this));
+            }
+        });
+    }
+
+    if ($creditBlocks.length > 0) {
+        $creditPaymentsBlock.before($creditBlocks);
+    }
+
+        //@todo отрефакторить. здесь прячем надпись "доп. способы оплаты",
+        // если все способы оплаты перенесли в основную часть.
+        if ($('#alternative-methods-container *:not(script, style)').length === 0) {
+            $('.other-title').hide();
+        }
+
+        $('button').on('click', function (e) {
+            if ($(this).attr('onclick')) {
+                return true;
+            }
+            e.preventDefault();
+            var $form = $(this).parents('form');
+
+            if ($form.length == 0) {// todo timurkar что делать с оплатой в один клик
+                return;
+            }
+            var idForm = $form.attr('id');
+
+            var input = $("<input>")
+                .attr("type", "hidden")
+                .attr("name", $(this).attr('name')).val($(this).attr('value'));
+
+            var firstInput = $form.find('input')[0] || null;
+
+
+            // Если есть input'ы, то вставляем после первого в форме,
+            // иначе ломаются стили завязанные на only-child.
+            // Напр-р `.gc-payment-method-card > div:only-child`
+            if (firstInput) {
+                $(firstInput).after(input);
+            } else {
+                $form.append(input);
+            }
+
+            const isGCPayment = parseInt($form.data('gc-payment') || 0)
+
+            $.ajax({
+                url: '/pl/sales/prepayment/set-prepayment',
+                async: false,
+                type: 'POST',
+                dataType: 'html',
+                data: {
+                    deal_id: 218595906,
+                    payment_value: 12995,
+                    type: (idForm && idForm.length) ? idForm : $form.attr('name'),
+                    isGCPayment: isGCPayment,
+                    form_params: $form.serialize()
+                },
+                                    success: function () {
+                    if (isGCPayment === 1) {
+                        $form.submit();
+                    }
+                },
+                error: function () {
+                    if (isGCPayment === 1) {
+                        alert('Ошибка при инициализации платежа');
+                    }
+                }
+            });
+            var $input = $form.find('input[name="total"]');
+            if ($input && $input.val() < 1) {
+                alert('Пожалуйста укажите сумму пополнения');
+                $input.focus();
+                return false;
+            }
+                            if (isGCPayment === 0) {
+                $form.submit();
+            }
+        });
+    });
+</script>
+        </div>
 </body>
 </html>
